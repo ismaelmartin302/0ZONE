@@ -1,0 +1,55 @@
+nav {
+    background-color: var(--background-color-main);
+    display: flex;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+nav img{
+    height: 5em;
+    
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    margin: auto;
+}
+
+.nav-burger{
+    display: none;
+
+}
+
+@media (width < 600px) {
+    nav ul, nav img {
+        display: none;
+
+        text-align: center;
+        position: absolute;
+
+        top: 3.35em;
+        right: 0;
+        font-size: 1.2em;
+        background-color: var(--background-color-main);
+        width: 6em;
+        padding: 20px 0px;
+    }
+
+    nav ul li {
+        padding: 0.3em;
+    }
+
+    .nav-burger {
+        display: unset;
+        font-size: 3em;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .display {
+        display: unset;
+    }
+}
